@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:id="@+id/layoutFirst"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:src="@drawable/icons8_water_droplet"
+        android:layout_height="wrap_content"
+        android:id="@+id/droplet"/>
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:src="@drawable/icons8_water_glass"
+        android:layout_height="wrap_content"
+        android:id="@+id/glass"/>
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:src="@drawable/icons8_water_bottle"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottle"/>
+
+</LinearLayout>
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="527dp"
+        android:layout_below="@id/layoutFirst"
+        android:layout_marginTop="23dp">
+
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="402dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/list"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="12dp"
+        android:indeterminate="false"
+        android:max="2500"
+        android:progressDrawable="@drawable/rounded_progress_bar" />
+
+</RelativeLayout>
